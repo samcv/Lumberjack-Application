@@ -1,42 +1,51 @@
 {
-   "license" : "perl",
-   "name" : "Lumberjack::Application",
-   "version" : "0.0.4",
-   "source-url" : "git@github.com:jonathanstowe/Lumberjack-Application.git",
-   "tags" : ["logging", "lumberjack", "websocket", "p6sgi" ],
-   "test-depends" : [
-		"Test::Util::ServerPort"
-   ],
-   "depends" : [
-		"Lumberjack",
-      "HTTP::UserAgent",
-      "HTTP::Server::Tiny",
-      "Crust",
-      "WebSocket",
-      "JSON::Class",
-      "Template6"
-	],
-   "support" : {
-      "source" : "git@github.com:jonathanstowe/Lumberjack-Application.git"
-   },
-   "build-depends" : [],
-   "resources" : [ "templates/index.tt" ],
-   "authors" : [
-      "Jonathan Stowe <jns+gh@gellyfish.co.uk>"
-   ],
-   "meta6" : "0",
-   "perl" : "6.c",
-   "auth" : "github:jonathanstowe",
-   "description" : "A web facility for the Lumberjack logging framework",
-   "provides" : {
-		"Lumberjack::Template::Provider" 		: "lib/Lumberjack/Template/Provider.pm",
-		"Lumberjack::Dispatcher::Proxy" 			: "lib/Lumberjack/Dispatcher/Proxy.pm",
-		"Lumberjack::Dispatcher::Supply" 		: "lib/Lumberjack/Dispatcher/Supply.pm",
-		"Lumberjack::Application" 					: "lib/Lumberjack/Application.pm",
-		"Lumberjack::Application::Index" 		: "lib/Lumberjack/Application/Index.pm",
-		"Lumberjack::Application::WebSocket"	: "lib/Lumberjack/Application/WebSocket.pm",
-		"Lumberjack::Application::PSGI" 			: "lib/Lumberjack/Application/PSGI.pm",
-		"Lumberjack::Message::JSON" 				: "lib/Lumberjack/Message/JSON.pm"
-
-   }
+  "name": "Lumberjack::Application",
+  "source-url": "git://github.com/samcv/Lumberjack-Application.git",
+  "support": {
+    "source": "https://github.com/samcv/Lumberjack-Application",
+    "bugtracker": "https://github.com/samcv/Lumberjack-Application/issues"
+  },
+  "perl": "6.c",
+  "build-depends": [
+    
+  ],
+  "resources": [
+    "templates/index.tt"
+  ],
+  "auth": "github:samcv",
+  "depends": [
+    "Lumberjack",
+    "HTTP::UserAgent",
+    "HTTP::Server::Tiny",
+    "Crust",
+    "WebSocket",
+    "JSON::Class",
+    "Template6"
+  ],
+  "license": "Artistic-2.0",
+  "tags": [
+    "logging",
+    "lumberjack",
+    "websocket",
+    "p6sgi"
+  ],
+  "test-depends": [
+    "Test::Util::ServerPort"
+  ],
+  "provides": {
+    "Lumberjack::Dispatcher::Supply": "lib/Lumberjack/Dispatcher/Supply.pm",
+    "Lumberjack::Dispatcher::Proxy": "lib/Lumberjack/Dispatcher/Proxy.pm",
+    "Lumberjack::Application::PSGI": "lib/Lumberjack/Application/PSGI.pm",
+    "Lumberjack::Application": "lib/Lumberjack/Application.pm",
+    "Lumberjack::Template::Provider": "lib/Lumberjack/Template/Provider.pm",
+    "Lumberjack::Message::JSON": "lib/Lumberjack/Message/JSON.pm",
+    "Lumberjack::Application::Index": "lib/Lumberjack/Application/Index.pm",
+    "Lumberjack::Application::WebSocket": "lib/Lumberjack/Application/WebSocket.pm"
+  },
+  "version": "0.0.4",
+  "authors": [
+    "Jonathan Stowe <jns+gh@gellyfish.co.uk>"
+  ],
+  "meta6": "0",
+  "description": "A web facility for the Lumberjack logging framework"
 }
